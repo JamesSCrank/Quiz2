@@ -1,3 +1,17 @@
+#include <iostream>
+using namespace std; 
+char matrix [3][3] = {'1', '2', '3', '4', '5', '6', '7'. '8', '9'};
+
+void Create(){
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl; 
+    }
+}
 //Tic tac toe game between 2 players or player vs computer 
 
 int main(){
@@ -19,7 +33,8 @@ int main(){
             case '1': 
             //if "Player vs. player", the program needs to give prompts for each player to input their choice
             cout << "Weclome players! You must both take turns, first to get to three wins, but watch out for ties!" << endl; 
-            
+            Create();
+
             break; 
             case '2':
             //Should the player choose "Player vs. Computer"
